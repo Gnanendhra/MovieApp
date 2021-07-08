@@ -1,0 +1,17 @@
+.poster {
+  height: 200px;
+  width: 300px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+.trending {
+  font-size: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .poster {
+    height: 100px;
+    width: 150px;
+    margin-right: 200px;
+  }
+}

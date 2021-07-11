@@ -21,11 +21,6 @@ class Home extends Component {
     this.getHeader()
   }
 
-  get = () => {
-    const {header} = this.state
-    console.log(header.original_title)
-  }
-
   getHeader = async () => {
     const {count} = this.state
     const options = {

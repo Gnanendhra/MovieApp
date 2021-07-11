@@ -57,7 +57,7 @@ class Login extends Component {
     )
 
     const tokenData = await response2.json()
-    console.log(tokenData)
+
     if (tokenData.success) {
       this.onsubmitSuccess(tokenData.request_token)
     } else {

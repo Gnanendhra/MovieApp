@@ -21,7 +21,7 @@ class SimilarMovies extends Component {
       options,
     )
     const data = await response.json()
-    console.log(data)
+
     this.setState({similarMovies: data.results})
   }
 

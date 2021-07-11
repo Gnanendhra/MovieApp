@@ -38,8 +38,7 @@ class Popular extends Component {
   }
 
   renderPopular = searchList => {
-    const {searchInput, isDisplay} = this.state
-    console.log(searchInput)
+    const {isDisplay} = this.state
 
     if (isDisplay && searchList.length === 0) {
       this.setState({isNotFound: true}, this.getDetails)
@@ -63,17 +62,23 @@ class Popular extends Component {
   }
 
   onIncrement = () => {
-    this.setState(
-      prev => ({pageNumber: prev.pageNumber + 1, isLoading: !prev.isLoading}),
-      this.getDetails,
-    )
+    const {pageNumber} = this.state
+    if (pageNumber < 20) {
+      this.setState(
+        prev => ({pageNumber: prev.pageNumber + 1, isLoading: !prev.isLoading}),
+        this.getDetails,
+      )
+    }
   }
 
   onDecrement = () => {
-    this.setState(
-      prev => ({pageNumber: prev.pageNumber - 1, isLoading: !prev.isLoading}),
-      this.getDetails,
-    )
+    const {pageNumber} = this.state
+    if (pageNumber !== 1) {
+      this.setState(
+        prev => ({pageNumber: prev.pageNumber - 1, isLoading: !prev.isLoading}),
+        this.getDetails,
+      )
+    }
   }
 
   onChange = event => {

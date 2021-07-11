@@ -1,0 +1,51 @@
+.account {
+  background-color: #fff;
+  padding-left: 80px;
+}
+.header-part {
+  background-color: #000;
+  height: 20vh;
+}
+.account-head {
+  color: #000;
+  padding-left: 160px;
+  padding-top: 30px;
+}
+.line {
+  background-color: lightblue;
+  width: 80%;
+}
+.membership {
+  padding-left: 160px;
+  display: flex;
+}
+.details-p {
+  font-size: 18px;
+  color: blue;
+  margin-right: 15px;
+}
+.hd-btn {
+  background-color: transparent;
+  margin-top: 15px;
+  margin-left: 10px;
+  border-radius: 8px;
+  border: 1px solid #000;
+  width: 80px;
+  height: 30px;
+  color: #000;
+}
+.logout-btn {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 30px;
+}
+.logout {
+  background-color: red;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 0px;
+  color: #fff;
+  padding: 8px;
+  width: 80px;
+}

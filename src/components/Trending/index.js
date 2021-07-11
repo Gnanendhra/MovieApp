@@ -40,10 +40,10 @@ class Trending extends Component {
   state = {trendingList: []}
 
   componentDidMount = () => {
-    this.getProducts()
+    this.getTrending()
   }
 
-  getProducts = async () => {
+  getTrending = async () => {
     const options = {
       method: 'GET',
     }
@@ -63,8 +63,8 @@ class Trending extends Component {
         {trendingList.map(movie => {
           const movieImage = `https://image.tmdb.org/t/p/original/${movie.poster_path}`
           return (
-            <div key={movie.id} width="80%">
-              <Link to={`/${movie.id}`}>
+            <div key={movie.id} width="80%" className="elements">
+              <Link to={`movie/${movie.id}`}>
                 <img
                   className="poster"
                   src={movieImage}

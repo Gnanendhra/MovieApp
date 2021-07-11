@@ -1,0 +1,13 @@
+.similar {
+  background-color: #000;
+  padding-left: 80px;
+  margin-top: -25px;
+}
+.similarTitle {
+  font-size: 25px;
+  color: #fff;
+}
+.similarItems {
+  display: flex;
+  flex-wrap: wrap;
+}

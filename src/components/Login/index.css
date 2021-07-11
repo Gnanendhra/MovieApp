@@ -64,8 +64,10 @@
   color: #fff;
   font-size: 25px;
 }
-.btn {
-  text-align: center;
+.btn1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .login-button {
   font-family: 'Roboto';
@@ -87,7 +89,7 @@
   .container {
     background-color: #000;
   }
-  .login-button {
+  .btn1 {
     width: 100%;
   }
   .login-card {

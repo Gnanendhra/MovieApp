@@ -11,7 +11,6 @@
 @media screen and (max-width: 600px) {
   .poster {
     height: 100px;
-    width: 150px;
-    margin-right: 200px;
+    width: 80px;
   }
 }

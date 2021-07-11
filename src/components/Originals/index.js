@@ -66,7 +66,7 @@ class Originals extends Component {
           const movieImage = `https://image.tmdb.org/t/p/original/${movie.poster_path}`
           return (
             <div key={movie.id} width="80%">
-              <Link to={`/${movie.id}`}>
+              <Link to={`movie/${movie.id}`}>
                 <img
                   className="poster"
                   src={movieImage}
@@ -85,7 +85,7 @@ class Originals extends Component {
   render() {
     return (
       <div>
-        <p className="topRated">Originals</p>
+        <p className="trending">Originals</p>
         {this.renderSlider()}
       </div>
     )

@@ -1,10 +1,14 @@
 .home {
-  background-color: #000;
   padding: 30px;
   height: 150vh;
 }
+.bg {
+  background-color: #000;
+}
+.dots {
+  text-align: center;
+}
 .top {
-  background-image: url('https://image.tmdb.org/t/p/original/nVKRspU9SQEs2gNrms8cDKsI4vx.jpg');
   background-size: cover;
   padding: 15px;
   padding-left: 35px;
@@ -13,16 +17,18 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  background-color: #000;
 }
 .title {
   color: #fff;
   font-size: 60px;
 }
 .overview {
+  margin-top: -20px;
   color: #fff;
   font-size: 15px;
 }
-button {
+.button {
   background-color: #fff;
   border-radius: 10px;
   padding: 10px;
@@ -51,14 +57,48 @@ button {
 .contact {
   margin-top: -10px;
 }
+
 @media screen and (max-width: 600px) {
   .title {
     font-size: 30px;
   }
-  .overviews {
+  .overview {
     font-size: 10px;
   }
   .home {
-    height: 200px;
+    height: 80vh;
+  }
+  .top {
+    height: 400px;
+  }
+  .button {
+    width: 50px;
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .home {
+    height: 50vh;
+  }
+  .top {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .home {
+    height: 110vh;
+  }
+  .top {
+    height: 600px;
+  }
+}
+@media screen and (max-width: 2000px) {
+  .home {
+    height: 150vh;
+  }
+  .top {
+    height: 600px;
   }
 }

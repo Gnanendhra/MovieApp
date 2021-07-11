@@ -10,18 +10,20 @@ const Header = () => (
         <Link to="/" className="nav-link">
           <li>Home</li>
         </Link>
-        <Link to="/products" className="nav-link">
+        <Link to="/popular" className="nav-link">
           <li>Popular</li>
         </Link>
       </ul>
     </div>
     <div className="nav-search">
       <AiOutlineSearch className="search" />
-      <img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkZG57fgD4vll8KUKs_iTT20n33XwLtJC1wA&usqp=CAU"
-        alt="icon"
-        className="icon"
-      />
+      <Link to="/Account">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkZG57fgD4vll8KUKs_iTT20n33XwLtJC1wA&usqp=CAU"
+          alt="icon"
+          className="icon"
+        />
+      </Link>
     </div>
   </nav>
 )

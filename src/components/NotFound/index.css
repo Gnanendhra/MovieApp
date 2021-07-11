@@ -1,0 +1,30 @@
+.not-found {
+  background-image: url('https://cdn.pixabay.com/photo/2016/11/29/04/19/ocean-1867285__340.jpg');
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.not-head {
+  color: #fff;
+  font-size: 60px;
+}
+.not-p1 {
+  color: #fff;
+  font-size: 25px;
+}
+.not-p2 {
+  color: #fff;
+  font-size: 35px;
+}
+.not-btn {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  border-width: 0px;
+  width: 150px;
+  color: #000;
+  font-size: 15px;
+}

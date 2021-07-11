@@ -1,0 +1,156 @@
+.bg-particularMovie {
+  height: 80vh;
+
+  background-size: cover;
+  margin-top: -25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 15px;
+}
+.header-top {
+  height: 100vh;
+}
+.movieInfo {
+  display: flex;
+  flex-direction: column;
+  padding-left: 80px;
+}
+.info {
+  margin-top: -15px;
+  color: #fff;
+  display: flex;
+}
+.movieTitle {
+  color: #fff;
+  font-size: 35px;
+}
+.dots1 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.movieOverview {
+  color: #fff;
+  width: 700px;
+}
+.btn {
+  background-color: transparent;
+  border-radius: 8px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #fff;
+  width: 50px;
+  height: 30px;
+  margin: 15px;
+  color: #fff;
+}
+.bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 30px;
+  margin-top: -5px;
+  background-color: #000;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+.genres {
+  color: lightblue;
+  font-size: 20px;
+}
+.items {
+  margin-top: -10px;
+  color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+  .genres {
+    font-size: 15px;
+  }
+  .items {
+    font-size: 10px;
+  }
+  .movieInfo {
+    padding-left: 20px;
+  }
+  .bottom {
+    flex-wrap: wrap;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .similar {
+    padding-left: 10px;
+  }
+  .similarTitle {
+    padding: 10px;
+    font-size: 15px;
+  }
+  .movieTitle {
+    font-size: 30px;
+  }
+  .movieOverview {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .genres {
+    font-size: 15px;
+  }
+  .items {
+    font-size: 10px;
+  }
+  .movieInfo {
+    padding-left: 20px;
+  }
+  .bottom {
+    flex-wrap: wrap;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .similar {
+    padding-left: 10px;
+  }
+  .similarTitle {
+    padding: 10px;
+    font-size: 15px;
+  }
+  .movieTitle {
+    font-size: 30px;
+  }
+  .movieOverview {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .genres {
+    font-size: 15px;
+  }
+  .items {
+    font-size: 10px;
+  }
+  .movieInfo {
+    padding-left: 20px;
+  }
+  .bottom {
+    flex-wrap: wrap;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .similar {
+    padding-left: 10px;
+  }
+  .similarTitle {
+    padding: 10px;
+    font-size: 15px;
+  }
+  .movieTitle {
+    font-size: 30px;
+  }
+  .movieOverview {
+    font-size: 10px;
+  }
+}

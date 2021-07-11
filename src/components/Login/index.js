@@ -8,7 +8,9 @@ class Login extends Component {
   state = {username: '', password: '', errorMsg: '', isError: false}
 
   onsubmitSuccess = jwtToken => {
+    const {history} = this.props
     Cookies.set('jwt_token', jwtToken, {expires: 10})
+    history.replace('/')
   }
 
   onsubmitFailure = msg => {
@@ -21,7 +23,7 @@ class Login extends Component {
   }
 
   changePassword = event => {
-    this.setState({password: event.target.value})
+    this.setState({password: event.target.value, isError: false})
   }
 
   submitForm = async event => {
@@ -114,7 +116,7 @@ class Login extends Component {
           <div className="input-container"> {this.renderUsernameField()}</div>
           <div className="input-container">{this.renderPasswordField()}</div>
           {isError && <p className="error">{errorMsg}</p>}
-          <div className="btn">
+          <div className="btn1">
             <button type="submit" className="login-button">
               Login
             </button>

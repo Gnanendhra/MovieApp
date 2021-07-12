@@ -13,13 +13,14 @@
   color: #fff;
 }
 .popularItems {
+  padding-top: 20vh;
   display: flex;
   flex-wrap: wrap;
 }
 .nav-popular {
   display: flex;
   width: 100%;
-
+  position: fixed;
   justify-content: space-between;
   background-color: transparent;
 }
@@ -45,7 +46,8 @@
   color: #fff;
 }
 .notFoundImage {
-  height: 300px;
+  padding-top: 20vh;
+  height: 600px;
 }
 .notFound {
   display: flex;

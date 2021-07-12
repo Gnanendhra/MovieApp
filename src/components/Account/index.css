@@ -1,6 +1,8 @@
 .account {
   background-color: #fff;
-  padding-left: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .header-part {
   background-color: #000;
@@ -48,4 +50,27 @@
   color: #fff;
   padding: 8px;
   width: 80px;
+}
+@media screen and (max-width: 768px) {
+  .account-head {
+    padding-left: 30px;
+    font-size: 25px;
+  }
+  .membership {
+    padding-left: 30px;
+  }
+  .line {
+    width: 90%;
+  }
+  .details-p {
+    font-size: 15px;
+  }
+  .details-p1 {
+    font-size: 13px;
+  }
+  .hd-btn {
+    width: 80px;
+    font-size: 13px;
+    margin-top: 13px;
+  }
 }

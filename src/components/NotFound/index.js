@@ -1,4 +1,5 @@
 import {Component} from 'react'
+import {Link} from 'react-router-dom'
 import './index.css'
 
 class NotFound extends Component {
@@ -11,9 +12,11 @@ class NotFound extends Component {
           home page.
         </p>
         <div className="not-button">
-          <button type="button" className="not-btn">
-            Netflix Home
-          </button>
+          <Link to="/">
+            <button type="button" className="not-btn">
+              MoviesApp Home
+            </button>
+          </Link>
         </div>
         <p className="not-p2">Error Code:NSES-404</p>
       </div>

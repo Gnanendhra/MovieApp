@@ -20,6 +20,7 @@
   font-size: 35px;
 }
 .not-btn {
+  cursor: pointer;
   padding: 10px;
   background-color: #fff;
   border-radius: 8px;

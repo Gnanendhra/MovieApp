@@ -101,7 +101,9 @@ class Popular extends Component {
       <div className="popular">
         <nav className="nav-popular">
           <div className="nav-content1">
-            <h1 className="nav-head1">MOVIES</h1>
+            <Link to="/" style={{textDecoration: 'none'}}>
+              <h1 className="nav-head1">MOVIES</h1>
+            </Link>
             <ul className="nav-menu1">
               <Link to="/" className="nav-link1">
                 <li>Home</li>
@@ -141,7 +143,7 @@ class Popular extends Component {
               alt="notFound"
               className="notFoundImage"
             />
-            <p className="errorText">{`Your Search for ${searchInput} did not find any matches`}</p>
+            <p className="errorText">{`Your Search for "${searchInput}" did not find any matches`}</p>
           </div>
         ) : (
           <div>

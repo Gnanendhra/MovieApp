@@ -5,7 +5,9 @@ import './index.css'
 const Header = () => (
   <nav className="nav-header">
     <div className="nav-content ">
-      <h1 className="nav-head">MOVIES</h1>
+      <Link to="/" style={{textDecoration: 'none'}}>
+        <h1 className="nav-head">MOVIES</h1>
+      </Link>
       <ul className="nav-menu">
         <Link to="/" className="nav-link">
           <li>Home</li>

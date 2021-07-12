@@ -47,6 +47,8 @@
 .search {
   margin-top: -10px;
   height: 30px;
+  color: #fff;
+  width: 40px;
 }
 
 @media screen and (max-width: 768px) {

@@ -1,4 +1,5 @@
 import {Component} from 'react'
+
 import {Link} from 'react-router-dom'
 import Slider from 'react-slick'
 import './index.css'
@@ -83,7 +84,7 @@ class Trending extends Component {
   render() {
     return (
       <div>
-        <p className="trending">Trending Now</p>
+        <p className="trending">Trending</p>
         {this.renderSlider()}
       </div>
     )

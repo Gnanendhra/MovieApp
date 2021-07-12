@@ -3,6 +3,7 @@ import './index.css'
 
 import Slider from 'react-slick'
 import {Link} from 'react-router-dom'
+import Header from '../Header'
 
 const settings = {
   dots: false,
@@ -84,6 +85,7 @@ class TopRated extends Component {
   render() {
     return (
       <div>
+        <Header />
         <p className="trending">Top Rated</p>
         {this.renderSlider()}
       </div>

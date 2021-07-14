@@ -41,10 +41,10 @@ class Originals extends Component {
   state = {originalsList: []}
 
   componentDidMount = () => {
-    this.getProducts()
+    this.getOriginalsList()
   }
 
-  getProducts = async () => {
+  getOriginalsList = async () => {
     const options = {
       method: 'GET',
     }

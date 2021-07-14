@@ -7,19 +7,19 @@
   justify-content: center;
   align-items: center;
 }
-.not-head {
+.notFound-header {
   color: #fff;
   font-size: 60px;
 }
-.not-p1 {
+.notFound-paragraph {
   color: #fff;
   font-size: 25px;
 }
-.not-p2 {
+.notFound-error {
   color: #fff;
   font-size: 35px;
 }
-.not-btn {
+.notFound-btn {
   cursor: pointer;
   padding: 10px;
   background-color: #fff;

@@ -6,10 +6,10 @@ class SimilarMovies extends Component {
   state = {similarMovies: []}
 
   componentDidMount = () => {
-    this.getSimilarProducts()
+    this.getSimilarMovies()
   }
 
-  getSimilarProducts = async () => {
+  getSimilarMovies = async () => {
     const {match} = this.props
     const {params} = match
     const {id} = params
@@ -48,8 +48,8 @@ class SimilarMovies extends Component {
   render() {
     return (
       <div className="similar">
-        <h1 className="similarTitle">More Like this</h1>
-        <div className="similarItems">{this.renderSimilar()}</div>
+        <h1 className="similar-title">More Like this</h1>
+        <div className="similar-items">{this.renderSimilar()}</div>
       </div>
     )
   }

@@ -18,15 +18,10 @@ class Home extends Component {
   }
 
   componentDidMount = () => {
-    this.getHeader()
+    this.getHeaderList()
   }
 
-  get = () => {
-    const {header} = this.state
-    console.log(header.original_title)
-  }
-
-  getHeader = async () => {
+  getHeaderList = async () => {
     const {count} = this.state
     const options = {
       method: 'GET',
@@ -48,7 +43,7 @@ class Home extends Component {
     const image = header.backdrop_path
 
     return (
-      <div className="bg">
+      <div className="home-container">
         <Header />
 
         <div>
@@ -56,7 +51,7 @@ class Home extends Component {
             style={{
               backgroundImage: `url('https://image.tmdb.org/t/p/original${image}')`,
             }}
-            className="top"
+            className="top-card"
           >
             <h1 className="title">{title}</h1>
             <p className="overview">{overView}</p>
@@ -72,10 +67,10 @@ class Home extends Component {
               color="red"
               height="50"
               width="50"
-              className="dots"
+              className="loading-dots"
             />
           ) : (
-            <div className="home">
+            <div className="bottom-card">
               <Trending />
               <TopRated />
               <Originals />

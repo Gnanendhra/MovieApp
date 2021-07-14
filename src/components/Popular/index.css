@@ -55,24 +55,24 @@
   justify-content: center;
   align-items: center;
 }
-.nav-content1 {
+.nav-popular-content {
   display: flex;
   padding-top: 25px;
   padding-bottom: 25px;
   padding-left: 40px;
 }
 
-.nav-head1 {
+.nav-popular-head {
   color: red;
   font-weight: bold;
   font-size: 40px;
 }
-.nav-menu1 {
+.nav-popular-menu {
   list-style-type: none;
   display: flex;
   margin-top: 45px;
 }
-.nav-link1 {
+.nav-popular-link {
   font-family: 'Roboto';
   text-decoration: none;
   margin: 10px;
@@ -80,26 +80,31 @@
   font-size: 16px;
   color: #fff;
 }
-.nav-search1 {
+.loading-popular-dots {
+  text-align: center;
+  padding-top: 40vh;
+  padding-bottom: 40vh;
+}
+.nav-popular-search {
   margin-top: 80px;
   justify-content: flex-end;
 }
 @media screen and (max-width: 768px) {
-  .nav-head1 {
+  .nav-popular-head {
     font-size: 25px;
     margin-left: -70px;
   }
-  .nav-menu1 {
+  .nav-popular-menu {
     margin-top: 20px;
     margin-left: -39px;
   }
-  .nav-link1 {
+  .nav-popular-link {
     font-size: 13px;
   }
   .input-field {
     width: 100px;
   }
-  .nav-search1 {
+  .nav-popular-search {
     margin-top: 50px;
   }
 }

@@ -3,11 +3,11 @@
   padding-left: 80px;
   margin-top: -25px;
 }
-.similarTitle {
+.similar-title {
   font-size: 25px;
   color: #fff;
 }
-.similarItems {
+.similar-items {
   display: flex;
   flex-wrap: wrap;
 }

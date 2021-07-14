@@ -1,14 +1,14 @@
-.home {
+.bottom-card {
   padding: 30px;
   height: 140vh;
 }
-.bg {
+.home-container {
   background-color: #000;
 }
-.dots {
+.loading-dots {
   text-align: center;
 }
-.top {
+.top-card {
   background-size: cover;
   padding: 15px;
   padding-left: 35px;
@@ -65,10 +65,10 @@
   .overview {
     font-size: 10px;
   }
-  .home {
+  .bottom-card {
     height: 80vh;
   }
-  .top {
+  .top-card {
     height: 400px;
   }
   .button {
@@ -78,27 +78,27 @@
 }
 
 @media screen and (max-width: 900px) {
-  .home {
+  .bottom-card {
     height: 50vh;
   }
-  .top {
+  .top-card {
     height: 400px;
   }
 }
 
 @media screen and (max-width: 1500px) {
-  .home {
+  .bottom-card {
     height: 110vh;
   }
-  .top {
+  .top-card {
     height: 600px;
   }
 }
 @media screen and (max-width: 2000px) {
-  .home {
+  .bottom-card {
     height: 150vh;
   }
-  .top {
+  .top-card {
     height: 600px;
   }
 }

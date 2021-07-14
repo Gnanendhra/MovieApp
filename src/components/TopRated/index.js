@@ -41,10 +41,10 @@ class TopRated extends Component {
   state = {topList: []}
 
   componentDidMount = () => {
-    this.getProducts()
+    this.getTopRatedList()
   }
 
-  getProducts = async () => {
+  getTopRatedList = async () => {
     const options = {
       method: 'GET',
     }

@@ -1,4 +1,4 @@
-.account {
+.account-details {
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -8,23 +8,32 @@
   background-color: #000;
   height: 20vh;
 }
-.account-head {
+.account-header {
   color: #000;
   padding-left: 160px;
   padding-top: 30px;
 }
-.line {
+.hr-line {
   background-color: lightblue;
   width: 80%;
 }
-.membership {
+.membership-details {
   padding-left: 160px;
   display: flex;
 }
-.details-p {
+.membership-header {
   font-size: 18px;
   color: blue;
   margin-right: 15px;
+}
+.plan-details-header {
+  font-size: 18px;
+  color: blue;
+  margin-right: 15px;
+}
+.plan-details {
+  padding-left: 160px;
+  display: flex;
 }
 .hd-btn {
   background-color: transparent;
@@ -52,22 +61,23 @@
   width: 80px;
 }
 @media screen and (max-width: 768px) {
-  .account-head {
+  .account-header {
     padding-left: 30px;
     font-size: 25px;
   }
-  .membership {
+  .membership-details {
     padding-left: 30px;
   }
-  .line {
+  .hr-line {
     width: 90%;
   }
-  .details-p {
+  .membership-paragraph {
     font-size: 15px;
   }
-  .details-p1 {
+  .plan-details-paragraph {
     font-size: 13px;
   }
+
   .hd-btn {
     width: 80px;
     font-size: 13px;

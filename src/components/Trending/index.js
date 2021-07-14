@@ -41,10 +41,10 @@ class Trending extends Component {
   state = {trendingList: []}
 
   componentDidMount = () => {
-    this.getTrending()
+    this.getTrendingList()
   }
 
-  getTrending = async () => {
+  getTrendingList = async () => {
     const options = {
       method: 'GET',
     }

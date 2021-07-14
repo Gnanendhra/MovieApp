@@ -14,8 +14,8 @@ class Login extends Component {
   }
 
   onsubmitFailure = msg => {
-    const errormsg = msg.split(':')
-    this.setState({errorMsg: errormsg[0], isError: true})
+    const errorMsg = msg.split(':')
+    this.setState({errorMsg: errorMsg[0], isError: true})
   }
 
   changeUsername = event => {
@@ -108,15 +108,15 @@ class Login extends Component {
       return <Redirect to="/" />
     }
     return (
-      <div className="container">
+      <div className="login-container">
         <h1 className="movie-head">Movies</h1>
         <form className="login-card" onSubmit={this.submitForm}>
-          <h1 className="m-head">Movies</h1>
-          <h1 className="head">Signin</h1>
+          <h1 className="movie-header">Movies</h1>
+          <h1 className="sign-in">Signin</h1>
           <div className="input-container"> {this.renderUsernameField()}</div>
           <div className="input-container">{this.renderPasswordField()}</div>
           {isError && <p className="error">{errorMsg}</p>}
-          <div className="btn1">
+          <div className="login-btn">
             <button type="submit" className="login-button">
               Login
             </button>

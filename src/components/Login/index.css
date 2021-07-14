@@ -1,4 +1,4 @@
-.container {
+.login-container {
   background-image: url('https://cdn.hipwallpaper.com/i/98/21/dUyCkp.jpg');
   height: 100vh;
   background-size: cover;
@@ -55,16 +55,16 @@
   margin-top: 20px;
   width: 100%;
 }
-.m-head {
+.movie-header {
   display: none;
 }
 
-.head {
+.sign-in {
   text-align: center;
   color: #fff;
   font-size: 25px;
 }
-.btn1 {
+.login-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -86,10 +86,10 @@
 }
 
 @media screen and (max-width: 600px) {
-  .container {
+  .login-container {
     background-color: #000;
   }
-  .btn1 {
+  .login-btn {
     width: 100%;
   }
   .login-card {
@@ -105,12 +105,12 @@
   .movie-head {
     display: none;
   }
-  .m-head {
+  .movie-header {
     display: inline;
     color: red;
     margin-top: -150px;
   }
-  .head {
+  .sign-in {
     text-align: left;
   }
 }

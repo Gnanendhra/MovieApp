@@ -16,10 +16,10 @@ class Popular extends Component {
   }
 
   componentDidMount = () => {
-    this.getDetails()
+    this.getPopularList()
   }
 
-  getDetails = async () => {
+  getPopularList = async () => {
     const {pageNumber} = this.state
     const options = {
       method: 'GET',
@@ -41,7 +41,7 @@ class Popular extends Component {
     const {isDisplay} = this.state
 
     if (isDisplay && searchList.length === 0) {
-      this.setState({isNotFound: true}, this.getDetails)
+      this.setState({isNotFound: true}, this.getPopularList)
     }
 
     return searchList.map(movie => {
@@ -65,8 +65,11 @@ class Popular extends Component {
     const {pageNumber} = this.state
     if (pageNumber < 20) {
       this.setState(
-        prev => ({pageNumber: prev.pageNumber + 1, isLoading: !prev.isLoading}),
-        this.getDetails,
+        previous => ({
+          pageNumber: previous.pageNumber + 1,
+          isLoading: !previous.isLoading,
+        }),
+        this.getPopularList,
       )
     }
   }
@@ -75,8 +78,11 @@ class Popular extends Component {
     const {pageNumber} = this.state
     if (pageNumber !== 1) {
       this.setState(
-        prev => ({pageNumber: prev.pageNumber - 1, isLoading: !prev.isLoading}),
-        this.getDetails,
+        previous => ({
+          pageNumber: previous.pageNumber - 1,
+          isLoading: !previous.isLoading,
+        }),
+        this.getPopularList,
       )
     }
   }
@@ -100,20 +106,20 @@ class Popular extends Component {
     return (
       <div className="popular">
         <nav className="nav-popular">
-          <div className="nav-content1">
+          <div className="nav-popular-content">
             <Link to="/" style={{textDecoration: 'none'}}>
-              <h1 className="nav-head1">MOVIES</h1>
+              <h1 className="nav-popular-head">MOVIES</h1>
             </Link>
-            <ul className="nav-menu1">
-              <Link to="/" className="nav-link1">
+            <ul className="nav-popular-menu">
+              <Link to="/" className="nav-popular-link">
                 <li>Home</li>
               </Link>
-              <Link to="/popular" className="nav-link1">
+              <Link to="/popular" className="nav-popular-link">
                 <li>Popular</li>
               </Link>
             </ul>
           </div>
-          <div className="nav-search1">
+          <div className="nav-popular-search">
             <div style={{display: 'flex'}}>
               <div>
                 <input
@@ -129,8 +135,8 @@ class Popular extends Component {
               <Link to="/Account">
                 <img
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkZG57fgD4vll8KUKs_iTT20n33XwLtJC1wA&usqp=CAU"
-                  alt="icon"
-                  className="icon"
+                  alt="face-icon"
+                  className="account-icon"
                 />
               </Link>
             </div>
@@ -153,7 +159,7 @@ class Popular extends Component {
                 color="red"
                 height="50"
                 width="50"
-                className="dots1"
+                className="loading-popular-dots"
               />
             ) : (
               <div className="popularItems">
@@ -184,7 +190,5 @@ class Popular extends Component {
     )
   }
 }
-
-//  "https://api.themoviedb.org/3/movie/popular?api_key={API_KEY}&language=en-US&page={PAGE_NUMBER}"
 
 export default Popular

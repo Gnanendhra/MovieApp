@@ -15,10 +15,10 @@ class SelectedMovie extends Component {
   }
 
   componentDidMount = () => {
-    this.getDetails()
+    this.getSelectedMovie()
   }
 
-  getDetails = async () => {
+  getSelectedMovie = async () => {
     const {match} = this.props
     const {params} = match
     const {id} = params
@@ -84,7 +84,7 @@ class SelectedMovie extends Component {
             color="red"
             height="50"
             width="50"
-            className="dots1"
+            className="loading-selected-dots"
           />
         ) : (
           <div className="header-top">
@@ -93,18 +93,18 @@ class SelectedMovie extends Component {
               style={{
                 backgroundImage: `url('https://image.tmdb.org/t/p/original${image}')`,
               }}
-              className="bg-particularMovie"
+              className="particularMovie-container"
             >
-              <div className="movieInfo">
-                <h1 className="movieTitle">{movieList.title}</h1>
-                <div className="info">
+              <div className="movie-information">
+                <h1 className="movie-title">{movieList.title}</h1>
+                <div className="information">
                   <p>{this.getRuntime()}</p>
                   <button type="button" className="btn">
                     UA
                   </button>
                   <p>{this.getYear()}</p>
                 </div>
-                <p className="movieOverview">{movieList.overView}</p>
+                <p className="movie-overview">{movieList.overView}</p>
                 <button type="button" className="button">
                   Play
                 </button>
@@ -118,15 +118,15 @@ class SelectedMovie extends Component {
                 ))}
               </div>
               <div>
-                <h1 className="genres">Audio Languages</h1>
+                <h1 className="languages">Audio Languages</h1>
                 {languages.map(each => (
                   <p className="items">{each.name}</p>
                 ))}
               </div>
               <div>
-                <h1 className="genres">Rating Count</h1>
+                <h1 className="rating-count">Rating Count</h1>
                 <p className="items">{ratingCount}</p>
-                <h1 className="genres">Rating Average</h1>
+                <h1 className="rating-average">Rating Average</h1>
                 <p className="items">{rating}</p>
               </div>
               <div>
@@ -143,7 +143,5 @@ class SelectedMovie extends Component {
     )
   }
 }
-//  "https://api.themoviedb.org/3/movie/{MOVIE_ID}?api_key={API_KEY}&language=en-US"
-//  "https://api.themoviedb.org/3/movie/{MOVIE_ID}/similar?api_key={API_KEY}&language=en-US&page={PAGE_NUMBER}"
 
 export default SelectedMovie

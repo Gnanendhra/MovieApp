@@ -37,7 +37,7 @@
   margin-top: 80px;
   justify-content: flex-end;
 }
-.icon {
+.account-icon {
   height: 35px;
   border-radius: 40px;
   margin-right: 70px;
@@ -59,7 +59,7 @@
     font-size: 25px;
     margin-top: 0px;
   }
-  .icon {
+  .account-icon {
     margin-right: 15px;
     margin-left: 5px;
   }

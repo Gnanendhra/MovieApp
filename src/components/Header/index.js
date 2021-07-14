@@ -22,8 +22,8 @@ const Header = () => (
       <Link to="/Account">
         <img
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkZG57fgD4vll8KUKs_iTT20n33XwLtJC1wA&usqp=CAU"
-          alt="icon"
-          className="icon"
+          alt="face-icon"
+          className="account-icon"
         />
       </Link>
     </div>
